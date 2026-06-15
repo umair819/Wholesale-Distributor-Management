@@ -220,3 +220,42 @@ Wholesale-Distributor-Management/
 - Medicines distributor = PharmaPOS + yeh system = lethal combination
 - Salesman mobile web app (PWA) — Phase 2 mein salesman field se order enter kare
 - Highest ticket price product — Rs. 50,000-75,000 enterprise easily milega
+
+---
+
+## 🔐 Final Phase: Security & Licensing System (Launch Se Pehle Lazim)
+
+> **Is phase ko complete kiye baghair software sell nahi karna!**
+> **Note:** SmartFlow/Fleet jaisi same Node.js architecture.
+
+### Steps:
+
+#### Step 1 — PC ID Generation (Node.js)
+- [ ] `node-machine-id` → SHA256 → PC ID
+- [ ] Salesman count limit enforce karo (1 user, 3 users, unlimited)
+
+#### Step 2 — Trial (Server-Side, 15 days)
+- [ ] "Trial — X days, 1 salesman only"
+- [ ] Server pe track, file nahi
+
+#### Step 3 — License Activation
+- [ ] `XXXX-XXXX-XXXX-XXXX` key (Small/Medium/Large)
+- [ ] `POST /api/activate` → `{key, pc_id, salesman_count}` → encrypted save
+
+#### Step 4 — Startup Validation
+- [ ] PC ID + salesman count enforce + expiry
+- [ ] Har 3 din online + 7-din offline grace
+
+#### Step 5 — Deactivation + Lock
+#### Step 6 — Code Protection (JS obfuscator + Electron)
+#### Step 7 — Admin License Panel (salesman count track)
+
+### Phase Table:
+| Phase | Tasks | Status |
+|-------|-------|--------|
+| Phase 8 | PC ID + Trial (1 salesman limit) | 🔴 Not Started |
+| Phase 8 | License activation (salesman count) | 🔴 Not Started |
+| Phase 8 | Startup + salesman limit validation | 🔴 Not Started |
+| Phase 8 | Deactivation + lock | 🔴 Not Started |
+| Phase 8 | Admin license panel | 🔴 Not Started |
+| Phase 8 | JS obfuscation + Electron build | 🔴 Not Started |
