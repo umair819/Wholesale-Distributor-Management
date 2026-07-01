@@ -160,7 +160,7 @@ yeh ek powerful distribution management system ban sakta hai.
 ## 📁 Planned Folder Structure
 
 ```
-Wholesale-Distributor-Management/
+SupplyX/
 ├── index.js                  # Node backend
 ├── database.js
 ├── db_config.json
